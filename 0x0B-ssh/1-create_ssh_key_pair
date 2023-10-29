@@ -1,11 +1,5 @@
-!/usr/bin/env bash
-# SSH client configuration
+#!/usr/bin/env bash
+# Script that creates an rsa key
 
-Host *
-    PasswordAuthentication no
-    IdentityFile ~/ .ssh/school
-    SendEnv LANG LC_*
-    HashKnownHosts yes
-    GSSAPIAuthentication yes
-    GSSAPIDelegateCredentials no
+ssh-keygen -t rsa -b 4096 -f school -N betty
 

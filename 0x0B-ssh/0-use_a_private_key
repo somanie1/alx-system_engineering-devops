@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-# Creates a new 4096-byte RSA key repair named school.
-ssh-keygen -b 4096 -N betty -f school
+#Script to connect the remote serve with the ssh key
+
+ssh -i ~/.ssh/school ubuntu@54.237.23.243
